@@ -15,24 +15,22 @@
 -- You should have received a copy of the GNU General Public License
 -- along with the conveyor mod. If not, see <http://www.gnu.org/licenses/>.
 
--- CONVEYOR ADAPTER (for conveyor chaining)
-conveyor_adapters['conveyor:conveyor'] = {
+-- RUBBER_COLLECTOR ADAPTER
+conveyor_adapters['rubber_collector:rubber_collector'] = {
+    wishlist = {
+        'rubber_sheet:rubber_base'
+    },
     get = function ( pos, wishlist )
         local inv = minetest.env:get_meta( pos ):get_inventory()
-        
-        -- no wish list? so we just return what we got
         if wishlist == nil then
-            return inv:remove_item('main', inv:get_stack('main', 0))
+            wishlist = { 'rubber_sheet:rubber_base' }
         end
-        
-        -- Try every item in the wishlist and return it if we got it
         for _, thing in ipairs( wishlist ) do
             local itst = ItemStack( thing )
             if inv:contains_item( 'main', itst ) then
                 return inv:remove_item( 'main', itst )
             end
         end
-        
         return false
     end,
     add = function ( pos, thing, addcb )
