@@ -47,12 +47,12 @@ minetest.register_node( 'conveyor:conveyor', {
     paramtype2 = 'facedir',
     groups = { cracky = 2 },
     tiles = {
-        'transactor_top.png',
-        'transactor_bottom.png',
-        'transactor_side.png',
-        'transactor_side.png',
-        'transactor_back.png',
-        'transactor_front.png'
+        'conveyor_top.png',
+        'conveyor_bottom.png',
+        'conveyor_side.png',
+        'conveyor_side.png',
+        'conveyor_back.png',
+        'conveyor_front.png'
     },
     on_construct = function ( pos )
         local meta = minetest.env:get_meta( pos )
