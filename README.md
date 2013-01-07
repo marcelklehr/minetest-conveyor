@@ -1,7 +1,7 @@
 # Conveyor mod
 for [Minetest](http://minetest.net/)
 
-A conveyor (or conveyor belt) can be placed between two nodes for transferring resources from one to the other. This allows you, for instance, to different store ores in a chest, connect that chest with a furnace and have the furnace automatically supplied with smelting materials from the chest. You can also supply the furnace with fuel that way.
+A conveyor (or conveyor belt) can be placed between two nodes for transferring resources from one to the other. This allows you, for instance, to store various ores in a chest, connect that chest with a furnace and have the furnace automatically supplied with smelting materials from the chest. You can also supply the furnace with fuel that way.
 
 Conveyors also work like a charm in combination with the [rubber collector](https://gitorious.org/marktraceur-minetest-mods/rubber_collector) and the factories from the [factories mod](https://gitorious.org/marktraceur-minetest-mods/factories).
 
