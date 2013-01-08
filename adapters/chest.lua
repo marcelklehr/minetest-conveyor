@@ -56,3 +56,4 @@ conveyor_adapters['default:chest'] = {
     end
 }
 
+conveyor_adapters['default:chest_locked'] = conveyor_adapters['default:chest']
