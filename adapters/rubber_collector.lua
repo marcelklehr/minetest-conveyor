@@ -31,7 +31,7 @@ conveyor_adapters['rubber_collector:rubber_collector'] = {
                 return inv:remove_item( 'main', itst )
             end
         end
-        return false
+        return nil
     end,
     add = function ( pos, thing, addcb )
         if not thing then
